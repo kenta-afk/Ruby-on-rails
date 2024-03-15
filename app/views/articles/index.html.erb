@@ -4,11 +4,14 @@
 
 <div id="articles">
   <% @articles.each do |article| %>
+    <p><strong> Name: </strong><%= article.name %></p>
     <%= render article %>
+    
     <p>
       <%= link_to "Show this article", article %>
     </p>
   <% end %>
 </div>
+
 
 <%= link_to "New article", new_article_path %>
