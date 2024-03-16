@@ -1,0 +1,23 @@
+body {
+    background-color: #0F1923;
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+}
+
+.title {
+    color: #FF4655;
+    text-shadow: 2px 2px #9C1C6B;
+}
+
+.date {
+    color: #FFFFFF;
+}
+
+.link {
+    color: #9C1C6B;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #FF4655;
+}
