@@ -1,4 +1,13 @@
-<h1>Hello VALORANT</h1>
-<p><%= Date.today %></p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VALORANT Friend 掲示板</title>
+    <%= stylesheet_link_tag 'welcome_index', :media => "all" %>
+</head>
+<body>
+    <h1 class="title">VALORANT friend 掲示板</h1>
+    <p class="date"><%= Date.today %></p>
 
-<%= link_to '掲示板へ', articles_path %>
+    <%= link_to '掲示板へ', articles_path, class: "link" %>
+</body>
+</html>
