@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Articles</h1>
+<h1>VALORANT friend 掲示板</h1>
 
 <div id="articles">
   <% @articles.each do |article| %>
@@ -8,10 +8,10 @@
     <%= render article %>
     
     <p>
-      <%= link_to "Show this article", article %>
+      <%= link_to "メッセージを見る", article %>
     </p>
   <% end %>
 </div>
 
 
-<%= link_to "New article", new_article_path %>
+<%= link_to "新しいメッセージ", new_article_path %>
