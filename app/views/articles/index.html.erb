@@ -1,17 +1,25 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>VALORANT friend 掲示板</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <p style="color: green"><%= notice %></p>
+    <%= stylesheet_link_tag 'articles_index', :media => "all" %>
+</head>
+<body>
+    <h1>VALORANT friend 掲示板</h1>
 
-<div id="articles">
-  <% @articles.each do |article| %>
-    <p><strong> Name: </strong><%= article.name %></p>
-    <%= render article %>
-    
-    <p>
-      <%= link_to "メッセージを見る", article %>
-    </p>
-  <% end %>
-</div>
+    <div id="articles">
+      <% @articles.each do |article| %>
+        <p><strong> Name: </strong><%= article.name %></p>
+        <%= render article %>
+        
+        <p>
+          <%= link_to "メッセージを見る", article %>
+        </p>
+      <% end %>
+    </div>
 
 
-<%= link_to "新しいメッセージ", new_article_path %>
+    <%= link_to "新しいメッセージ", new_article_path %>
+</body>
+</html>
