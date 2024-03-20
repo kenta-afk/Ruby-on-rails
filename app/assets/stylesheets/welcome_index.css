@@ -15,10 +15,21 @@ body {
 }
 
 .link {
-    color: #9C1C6B;
-    text-decoration: none;
+    color: #FF4655;
+    position: relative;
+    top: 30px;
 }
 
 .link:hover {
     color: #FF4655;
 }
+
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
